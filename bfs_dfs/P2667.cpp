@@ -1,3 +1,8 @@
+/*
+** Baekjoon Algorithm
+** bfs #2667 단지번호붙이기
+*/
+
 #include <iostream>
 #include <queue>
 #include <string>
