@@ -45,8 +45,8 @@ void init() {
 			// 익은 토마토의 위치를 캐싱
 			if (box[r][c] == 1)
 				start_pos.push_back(point{ r,c });
-            if (box[r][c] == 0)
-                zero_num++;
+            		if (box[r][c] == 0)
+                		zero_num++;
 		}
 	}
 }
@@ -61,9 +61,9 @@ void ripenTomatoes() {
 	while (!q.empty()) {
 		if (isAllTomatoesRipened()) {
 			// 모든 토마토가 익었으면 끝낸다.
-            // 다 익자마자 함수호출을 끝내므로 days 처리가 안된거 처리
-            if (days > 0) days++;
-            return;
+            		// 다 익자마자 함수호출을 끝내므로 days 처리가 안된거 처리
+            		if (days > 0) days++;
+            		return;
 		}
 		if (be_processed == 0) {
 			// 오늘 처리할 토마토들을 다 처리하면 다시 현재 처리할 사이즈 갱신
@@ -79,7 +79,7 @@ void ripenTomatoes() {
 			if (isOutOfRange(trow, tcol)) continue;
 			if (box[trow][tcol] == 0) {
 				box[trow][tcol] = 1;
-                zero_num--;
+                		zero_num--;
 				q.push(point{ trow,tcol });
 			}
 		}
