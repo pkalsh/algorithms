@@ -1,0 +1,3 @@
+﻿  temp.cpp
+C:\Users\82109\work\caustudy\algo-study2\algo-study2\algo-study2\temp.cpp(117,21): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+  algo-study2.vcxproj -> C:\Users\82109\work\caustudy\algo-study2\algo-study2\Debug\algo-study2.exe
